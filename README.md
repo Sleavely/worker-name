@@ -13,6 +13,12 @@ const servername = require('worker-name')
 
 You can manually set the instance name by setting the `WORKER_NAME` environment variable.
 
+For Heroku, it is recommended you enable [dyno metadata](https://devcenter.heroku.com/articles/dyno-metadata):
+
+```sh
+heroku labs:enable runtime-dyno-metadata -a <app name>
+```
+
 ## MIT License
 
 Copyright (c) 2018 Joakim Hedlund
